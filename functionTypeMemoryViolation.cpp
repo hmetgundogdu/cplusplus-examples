@@ -46,7 +46,7 @@ int main ()
   pthread_join(t1, NULL);
   pthread_join(t2, NULL);
   
-  std::cout << d1 << std::endl << d2 << std::endl;
+  std::cout << &d1->func << std::endl << &d2->func << std::endl;
   
   return 0;
   
